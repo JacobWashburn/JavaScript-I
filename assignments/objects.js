@@ -22,10 +22,24 @@ const example = {
 // Write your intern objects here:
 let interns = [
    { id: 1, name: "Mitzi", gender: "F", email: "mmelloy0@psu.edu" },
-   { id: 2, name: "Kennan", gender: "M", email: "kdiben1@tinypic.com", speak: function(){ return "Hello, my name is " + this.name + "!"} },
+   {
+      id: 2,
+      name: "Kennan",
+      gender: "M",
+      email: "kdiben1@tinypic.com",
+      speak: function() {
+         return "Hello, my name is " + this.name + "!";
+      }
+   },
    { id: 3, name: "Keven", gender: "M", email: "kmummery2@wikimedia.org" },
    { id: 4, name: "Gannie", gender: "M", email: "gmartinson3@illinois.edu" },
-   { id: 5, name: "Antonietta", gender: "F", email: "adaine5@samsung.com" }
+   {
+      id: 5,
+      name: "Antonietta",
+      gender: "F",
+      email: "adaine5@samsung.com",
+      multiplyNums: (num1, num2) => num1 * num2
+   }
 ];
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -51,7 +65,7 @@ console.log(interns[4].gender);
  console.log(interns[1].speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+console.log(interns[4].multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
